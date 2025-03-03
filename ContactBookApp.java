@@ -36,7 +36,7 @@ class ContactBook {
     public void addContact(String name, String phone, String email) {
         if (contactCount < contacts.length) {
             contacts[contactCount] = new FriendsContact(name, email, phone);
-            contactCount++; // Adds Contacts to Array, after checking if there is still space available
+            contactCount++;
             System.out.println("Contact '" + name + "' added successfully.");
         } else {
             System.out.println("Contact book is full. Cannot add more contacts.");
